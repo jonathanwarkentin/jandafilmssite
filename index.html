@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>J & A Films</title>
+  <link rel="stylesheet" type = "text/css" href="css/style.css">
+</head>
+<body>
+  <header id="main-header">
+    <!-- Nav Bar Stuff -->
+    <nav id="navbar">
+        <div id="jnalogo"><a href="index.html"><img src="img/jnalogo.png" alt="J & A Logo"></a></div>
+        <ul id= "vertical-ul">
+          <li id="videography">VIDEOGRAPHY</li>
+          <li id="photography">PHOTOGRAPHY</li>
+          <li id="nashville-tn">NASHVILLE, TN</li>
+        </ul>
+
+          <h2><a href="#our-work">OUR WORK</a></h2>
+          <h2><a href="#about-us">ABOUT US</a></h2>
+          <h2><a href="#contact-us">CONTACT US</a></h2>
+
+        <div id="insta-logo"><a href="http://instagram.com/" target="_blank"><img src="img/instagramlogo.png" alt="Instagram Logo"></a></div>
+
+    </nav>
+  </header>
+
+    <br>
+
+    <div id="body-container">
+<!-- Video Example Stuff -->
+    <section>
+      <a name="our-work"></a>
+      <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/272873111?portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+      <br>
+      <div id="video-example-thumbnails">
+        <ul id="video-example-ul">
+          <li id="detc-thumb"><a href="donteatthecow.html"><img src="img/donteatthecowthumbnail.jpg" alt="Don't Eat the Cow Thumbnail"></a></li>
+          <li id="cal-thumb"><a href="calibercoffee.html"><img src="img/caliberthumbnail.jpg" alt="Caliber Coffee Thumbnail"></a></li>
+          <li id="injyp-thumb"><a href="itsnotjustyourphone.html"><img src="img/itsnotjustyourphonethumbnail.jpg" alt="It's Not Just Your Phone Thumbnail"></a></li>
+        </ul>
+      </div>
+    </section>
+
+    <br>
+    <hr>
+    <br>
+
+<!-- Photo Example Stuff -->
+    <section>
+      <div id="photo-examples">
+        <div id="photo-box-1">
+          <div id="photo-1">
+            <img src="img/hanhsteeplechase.jpg" alt="Hanh at Steeplechase">
+          </div>
+          <div id="photo-2">
+            <img src="img/nate2.jpg" alt="Nate Silhouette">
+          </div>
+        </div>
+        <div id="photo-box-2">
+          <img src="img/nate1.jpg" alt="Nate Low Angle">
+        </div>
+      </div>
+    </section>
+
+    <br>
+    <hr>
+    <br>
+
+    <section id="about-us">
+      <div id="about-us-text">
+        <a name="about-us"></a>
+        <h1>ABOUT US</h1>
+        <br>
+        <p>We're Arif Bashar and Jonathan Warkentin, videographers/photographers from Nashville, Tennessee. Several years ago, we started learning about cameras and editing for fun, and now we are now doing freelance work with clients of all types in the Nashville area!</p>
+      </div>
+      <img src="img/jnafaces.png" alt="J & A Faces" id="jna-faces">
+    </section>
+
+    <br>
+    <hr>
+    <br>
+
+    <section id="contact-us">
+      <img src="img/hanhpatio.jpg" alt="Hanh Patio Picture" id="hanh-patio">
+      <div id="contact-us-text">
+        <h1>CONTACT US</h1>
+        <a name="contact-us"></a>
+        <p>Feel free to use the form below to let us know you're interested in working with us! We look forward to making you a product you can be proud of, from restaurant promotional video to portraits for Instagram! We'll get back to you promptly so together we can figure out what you'd like to do if you don't already know, or develop your idea if you do!</p>
+      </div>
+      <br>
+      <form action = "process.php" method="POST" id="contact-us-form">
+        <label>NAME:</label>
+        <input class="non-button-input" type="text" name="fullName" placeholder="Enter your full name" onclick="this.value='';this.style.color='black';">
+        <br>
+        <label>EMAIL:</label>
+        <input class="non-button-input" type="email" name="email" placeholder="Enter your email address" onclick="this.value='';this.style.color='black';">
+        <br>
+        <label>I AM INTERESTED IN:</label>
+        <input class="non-button-input" type="text" name="interest" placeholder="Restaurant video, personal photos for social media, music video, etc." onclick="this.value='';this.style.color='black';">
+        <br>
+        <label>I HEARD ABOUT J & A FILMS THROUGH:</label>
+        <select class="non-button-input" name="heardAbout">
+          <option placeholder="select-one">Select one...</option>
+          <option value="wordOfMouth">Word of Mouth</option>
+          <option value="Instagram">Instagram</option>
+          <option value="Other">Other</option>
+        </select>
+        <br>
+        <label>PREFERRED CONTACT:</label>
+        <input class="non-button-input" type="text" name="prefContact" placeholder="Phone Number, Instagram, Email, etc." onclick="this.value='';this.style.color='black';">
+        <br>
+        <input class="submit-button" type="submit" name="submit" value="SUBMIT">
+      </form>
+      <img src="img/victor.jpg" alt="Victor Picture" id="victor-picture">
+    </section>
+
+
+    <hr id="bottom-margin">
+
+  </div>
+</body>
+</html>
