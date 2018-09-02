@@ -1,15 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Oswald:400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400,500,700');
 *{
   padding:0;
   margin:0;
-  font-family: 'Oswald',Times, sans-serif;
+  font-family: 'Oswald',Arial, sans-serif;
 }
 #main-header{
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
 }
-#body-container{
+.body-container{
   max-width: 900px;
   margin-left: auto;
   margin-right: auto;
@@ -58,13 +58,13 @@ img{
   margin-bottom: 20px;
 }
 
-#navbar a{
+a{
   text-decoration: none;
 }
-#navbar a:link, a:visited{
+a:link, a:visited{
   color:#000;
 }
-#navbar a:hover{
+a:hover{
   color: #7a7d7d;
 }
 #navbar h2{
@@ -76,4 +76,40 @@ img{
   max-width: 40px;
   max-height: 40px;
   align-self: center;
+}
+
+/* video description stuff */
+.video-description h1{
+  font-family: Arial;
+  font-weight: 700;
+  font-size: 32px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+.video-description p{
+  font-weight: 300;
+  font-size: 24px;
+  margin-bottom: 0px;
+}
+
+/* next and previous stuff */
+.next-prev h3{
+  font-weight:400;
+  font-size: 16px;
+}
+.next-prev{
+  display: inline;
+}
+.prev{
+  float:left;
+}
+.next{
+  float:right;
+}
+
+/* margin bottom of page */
+.bottom-margin{
+  clear:both;
+  margin-top:10px;
+  margin-bottom: 125px;
 }
