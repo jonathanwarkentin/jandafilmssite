@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Oswald:400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400,500,700');
 *{
   padding:0;
   margin:0;
@@ -208,12 +208,146 @@ img{
 }
 
 /* Responsive Design */
+.short-text{
+  display: none;
+}
+.full-text{
+  display: inline-flex;
+}
 /*Tablet Landscape */
-@media screen and (max-width: 1060px){
+@media screen and (max-width: 1024px){
   #main-header{
     width: 85%;
   }
   .body-container{
     width: 75%;
+  }
+  #jnalogo{
+    max-width:142px;
+    max-height: auto;
+  }
+  #videography{
+    font-size: 24px;
+    padding-top: 6px;
+  }
+  #photography{
+    font-size: 24px;
+    padding-bottom: 5px;
+  }
+  #nashville-tn{
+    font-size: 16px;
+    letter-spacing: 2.5px;
+    margin-bottom: 16px;
+  }
+  #navbar h2{
+    font-size:24px;
+    font-weight: 700;
+    align-self: center;
+  }
+  #insta-logo{
+    max-width: 36px;
+    max-height: 36px;
+  }
+}
+
+/* Tablet Portrait */
+@media screen and (max-width:768px){
+  .short-text{
+    display: inline-flex;
+  }
+  .full-text{
+    display: none;
+  }
+  #main-header{
+    width: 90%;
+  }
+  .body-container{
+    width: 85%;
+  }
+
+  #about-us-text p{
+    line-height: 26px;
+    font-weight: 300;
+  }
+  #contact-us-text h1{
+    margin-bottom:10px;
+  }
+  #contact-us-text p{
+    line-height: 26px;
+    font-weight: 300;
+  }
+}
+
+/* Phone Portrait */
+@media screen and (max-width: 400px){
+  #main-header{
+    width: 95%;
+    max-height:125px;
+  }
+  .body-container{
+    width: 95%;
+  }
+  #navbar{
+    margin-top:0px;
+    display: inline-block;
+  }
+  #jnalogo{
+    max-width:50%;
+    max-height: auto;
+    float: left;
+    vertical-align: center;
+  }
+  #vertical-ul{
+    margin-top:1.5em;
+    max-width:50%;
+    float:right;
+    vertical-align: center;
+  }
+  #navbar h2{
+    display: none;
+  }
+  #insta-logo{
+    display: none;
+  }
+
+  #video-example-ul{
+    grid-column-gap: 0.25em;
+    margin-bottom: 1em;
+  }
+
+  #photo-examples{
+    flex-direction: column;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+  #photo-examples img{
+    width: 100%;
+  }
+  #photo-box-2{
+    margin-right: 0em;
+    align-self: center;
+  }
+
+  #about-us{
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  #contact-us{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 1em;
+  }
+  #contact-us img{
+    max-width:100%;
+  }
+  #victor-picture{
+    margin-top: 20px;
+  }
+  .non-button-input{
+    width: 90%;
+  }
+  .bottom-margin{
+    margin-bottom: 75px;
   }
 }
